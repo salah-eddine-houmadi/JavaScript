@@ -1,5 +1,5 @@
 // const fs = require('fs');
-const fs = require("fs/promises");
+const fs = require('fs/promises');
 
 // Write to a file //
 
@@ -22,7 +22,7 @@ const fs = require("fs/promises");
 async function createFile(filename, content) {
   try {
     await fs.writeFile(filename, content);
-    console.log("File created");
+    console.log('File created');
   } catch (error) {
     console.log(error);
   }
@@ -32,7 +32,7 @@ async function createFile(filename, content) {
 
 async function readFile(filename) {
   try {
-    const data = await fs.readFile(filename, "utf8");
+    const data = await fs.readFile(filename, 'utf8');
     console.log(data);
   } catch (error) {
     console.log(error);
@@ -69,7 +69,7 @@ async function createFolder(folderName) {
   }
 }
 
-createFolder("folder1");
+createFolder('folder1');
 
 // renameFile('file1.txt', 'file.txt');
 
@@ -80,3 +80,5 @@ createFolder("folder1");
 // readFile('file3.txt');
 
 // createFile('file4.txt', 'Hello World 4');
+
+// https://nodejs.org/api/fs.html
