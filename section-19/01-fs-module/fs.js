@@ -32,7 +32,7 @@ async function createFile(filename, content) {
 
 async function readFile(filename) {
   try {
-    const data = await fs.readFile(filename, "utf8");
+    const data = await fs.readFile(filename, 'utf8');
     console.log(data);
   } catch (error) {
     console.log(error);
@@ -69,7 +69,8 @@ async function createFolder(folderName) {
   }
 }
 
-createFolder("folder1");
+
+createFolder('folder1');
 
 // renameFile('file1.txt', 'file.txt');
 
