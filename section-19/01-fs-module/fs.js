@@ -69,7 +69,6 @@ async function createFolder(folderName) {
   }
 }
 
-
 createFolder('folder1');
 
 // renameFile('file1.txt', 'file.txt');
